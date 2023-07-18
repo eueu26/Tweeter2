@@ -1,0 +1,28 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #d69d37;
+  height: 400px;
+  padding: 0px;
+  width: 100%;
+  /* margin-bottom: 10%;
+  margin-top: 10%; */
+ 
+  background-color: #080106;
+background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+
+  
+}
+
+.image{
+  display: flex;
+  height: 80px;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+   /* margin-top: 0%;
+  margin-bottom: 0%; */
+}
+

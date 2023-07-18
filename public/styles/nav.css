@@ -1,0 +1,47 @@
+nav {
+  display: flex;
+  font-family: 'Source Sans 3', sans-serif;
+  height: 110px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.fa-solidfa-angles-down {
+display: flex;
+align-items: center;
+}
+
+nav span {
+ color: #ffffff;
+ font-size: 32px;
+}
+
+
+
+
+div.write-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+span.write-new-tweet {
+  font-size: 1rem;
+  font-family: 'Bungee';
+}
+
+
+
+
+/* header { */
+
+  /* background-color: purple; */
+  /* position: fixed; */
+/* } */

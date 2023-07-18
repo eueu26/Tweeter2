@@ -1,0 +1,55 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
+
+html {
+  box-sizing: border-box;
+  font-family: 'Source Sans 3';
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  display: flex;
+  color: #545149;
+  background-color: #f4f1ec;
+  font-size: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  flex-wrap: wrap;
+  /* font-weight: 400;  */
+  /* flex-direction: column;
+  align-content: center;
+  align-items: center; */
+   
+}
+
+main{
+  display: flex;
+  width: 90%;
+  /* background-color: #f4f1ec; */
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* align-content: stretch;  */
+   /* align-items: stretch; */
+  justify-content: space-evenly;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
