@@ -3,8 +3,8 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: #d69d37;
-  height: 400px;
+  /* background-color: #d69d37; */
+  height: 450px;
   padding: 0px;
   width: 100%;
   /* margin-bottom: 10%;
@@ -18,7 +18,7 @@ background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 
 .image{
   display: flex;
-  height: 80px;
+  height: 200px;
   width: 60%;
   align-items: center;
   justify-content: center;
@@ -26,3 +26,8 @@ background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   margin-bottom: 0%; */
 }
 
+.name {
+  display: flex;
+  height: 80px;
+  color: white;
+}

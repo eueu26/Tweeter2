@@ -3,19 +3,7 @@ form {
   flex-direction: column;
   padding: 1em;
 }
-form div {
-  display: flex;
-  justify-content: space-between;
-  font-family: Bungee;
-  font-size: 0.9em;
-  padding-top: 0.5em;
-}
-form button {
-  background-color: #4056a1;
-  color: #ffffff;
-  border: none;
-  padding: 0.1em 0.5em;
-}
+
 form textarea {
   border: none;
   background-color: transparent;
@@ -24,4 +12,19 @@ form textarea {
   outline: none;
   resize: none;
   font-size: 0.9em;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee;
+  font-size: 0.9em;
+  padding-top: 0.5em;
+}
+
+form button {
+  background-color: #4056a1;
+  color: #ffffff;
+  border: none;
+  padding: 0.1em 0.5em;
 }

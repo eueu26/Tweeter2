@@ -17,9 +17,16 @@ display: flex;
 align-items: center;
 }
 
-nav span {
+.logo  {
  color: #ffffff;
  font-size: 32px;
+ font-family: Bungee;
+}
+
+.bold {
+  color: #ffffff;
+ font-size: 25px;
+ font-family: Bungee;
 }
 
 
