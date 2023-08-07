@@ -12,43 +12,39 @@ nav {
   padding-right: 1.5em;
 }
 
-.fa-solidfa-angles-down {
-display: flex;
-align-items: center;
-}
-
 .logo  {
  color: #ffffff;
- font-size: 32px;
+ font-size: 25px;
  font-family: Bungee;
 }
 
-.bold {
+.write-new-tweet {
   color: #ffffff;
  font-size: 25px;
  font-family: Bungee;
 }
 
 
-
-
-div.write-tweet {
+div.new-tweet {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-span.write-new-tweet {
-  font-size: 1rem;
-  font-family: 'Bungee';
+
+
+
+@media only screen and (min-width: 1024px)  {
+  nav {
+    height: 100px;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .write-new-tweet {
+    font-size: 1.5rem;
+  }
 }
-
-
-
-
-/* header { */
-
-  /* background-color: purple; */
-  /* position: fixed; */
-/* } */

@@ -3,18 +3,13 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
-  /* background-color: #d69d37; */
   height: 450px;
   padding: 0px;
   width: 100%;
-  /* margin-bottom: 10%;
-  margin-top: 10%; */
- 
   background-color: #080106;
-background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-
-  
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 }
+
 
 .image{
   display: flex;
@@ -22,8 +17,6 @@ background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   width: 60%;
   align-items: center;
   justify-content: center;
-   /* margin-top: 0%;
-  margin-bottom: 0%; */
 }
 
 .name {
@@ -31,3 +24,30 @@ background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   height: 80px;
   color: white;
 }
+
+
+@media only screen and (min-width: 1024px) {
+  .page-header {
+    margin-top: 175px;
+    margin-left: 50px;
+    margin-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .image {
+    max-width: 175px;
+    max-height: 175px;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+  }
+  }
+  
+  @media only screen and (max-width: 1023px) {
+    .page-header {
+      padding-top: 100px;
+      margin-top: 0px;
+    }
+  }

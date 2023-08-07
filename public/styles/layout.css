@@ -13,6 +13,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Source Sans 3';
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -23,33 +24,46 @@ html {
  */
 
 body {
+
   display: flex;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 20px;
   font-family: 'Source Sans 3', sans-serif;
-  flex-wrap: wrap;
-  /* font-weight: 400;  */
-  /* flex-direction: column;
   align-content: center;
-  align-items: center; */
-   
+  align-items: center; 
+  flex-direction: column;
+  
 }
 
+
 main{
+
   display: flex;
   width: 90%;
-  /* background-color: #f4f1ec; */
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* align-content: stretch;  */
-   /* align-items: stretch; */
   justify-content: space-evenly;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ @media only screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  main {
+    width: 200%;
+    background-color: #f4f1ec;
+    margin-top: 120px;
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+}
+
