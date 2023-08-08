@@ -101,26 +101,29 @@
         <h2>Compose Tweet</h2>
 
         <span id="error-message-empty" class="error-message-box">
-          <i class="fas fa-exclamation-triangle" style= "color: red"></i>
-          Input text for new Tweet!
+          Input text to create new Tweet!
+        </span>
+
+        <span id="error-message-exceedMax" class="error-message-box">
+          You have exceeded the limit for new Tweet content.
         </span>
 
    
         <form action="/tweets" method="POST" id="new-tweet-text">
           <label for="tweet-text">What are you humming about?</label>
 
-          <textarea name="text" id="tweet-text" maxlength="140"></textarea>
+          <textarea name="text" id="tweet-text" ></textarea>
 
           <div class="new-tweet-footer">
-            <button id= "submit" type="submit">Tweet</button>
+            <button id= "submit" type="submit" onclick="this.disable=true">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
 
         </form>
 
+        <article id="tweets-container"></article>
       </section>
 
-      <section id="tweets-container"></section>
     </main>
   </body>
 </html>

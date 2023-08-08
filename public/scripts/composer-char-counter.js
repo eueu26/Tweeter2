@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     $countElement.text(textCount);
 
-    if (textCount < 1) {
+    if (textCount < 0) {
       $countElement.css("color", "red");
 
     } else {
