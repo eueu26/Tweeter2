@@ -5,27 +5,26 @@
  */
 
 $(document).ready(function () {
-  
   // ensure safe "encoded" representation
-  const escape = function(str) {
+  const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-  
+
   //direct tweets submited to #tweet-container
-  const renderTweets = function(tweets) {
+  const renderTweets = function (tweets) {
     $("#tweets-container").empty();
     for (let tweet of tweets) {
       const showTweet = createTweetElement(tweet);
       $("#tweets-container").prepend(showTweet);
     }
   };
-  
+
   //Create new tweet element for tweet data
-  const createTweetElement = function(tweetData) {
+  const createTweetElement = function (tweetData) {
     const HTML = `${escape(tweetData.content.text)}`;
-    
+
     let $tweet = $(`
     <article class="tweet">
     <header class="tweet-header">
@@ -51,16 +50,16 @@ $(document).ready(function () {
     </article>`);
     return $tweet;
   };
-  
+
   // Get request for ajax to pull tweets to load
   const loadTweets = function() {
     $.ajax("/tweets", { method: "GET" }).then((tweets) => {
       renderTweets(tweets);
     });
   };
-  
   loadTweets();
   
+
   //Adds new tweet when submit is clicked
   $("#error-message-empty").hide();
   $("#error-message-exceedMax").hide();
@@ -68,7 +67,7 @@ $(document).ready(function () {
     event.preventDefault();
     const textMax = 140;
     const textInputLength = $(this).find("#tweet-text").val().length;
-    
+
     if (!textInputLength) {
       $("#error-message-empty").slideDown();
       $("#error-message-exceedMax").hide();
