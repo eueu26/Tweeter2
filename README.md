@@ -7,11 +7,11 @@ This project was built using HTML, CSS, JS, jQuery, AJAX front-end skills, Node 
 
 ## Screenshots
 
-!["Screenshot of fullscreen page"] (https://github.com/eueu26/tweeter2/blob/master/public/docs/fullScreen.png?raw=true)
+!["Screenshot of fullscreen page"](https://github.com/eueu26/tweeter2/blob/master/public/docs/fullScreen.png?raw=true)
 
-!["Screenshot of tweet-box"] (https://github.com/eueu26/tweeter2/blob/master/public/docs/tweet-box.png?raw=true) 
+!["Screenshot of tweet-box"](https://github.com/eueu26/tweeter2/blob/master/public/docs/tweet-box.png?raw=true) 
 
-!["Screenshot of halfscreen page"] (https://github.com/eueu26/tweeter2/blob/master/public/docs/halfScreen.png?raw=true) 
+!["Screenshot of halfscreen page"](https://github.com/eueu26/tweeter2/blob/master/public/docs/halfScreen.png?raw=true) 
 
 
 

@@ -23,8 +23,7 @@ $(document).ready(function () {
 
   //Create new tweet element for tweet data
   const createTweetElement = function (tweetData) {
-    const HTML = `${escape(tweetData.content.text)}`;
-
+    
     let $tweet = $(`
     <article class="tweet">
     <header class="tweet-header">
@@ -37,7 +36,7 @@ $(document).ready(function () {
     </div>
     </header>
     <div class="tweet-text">
-    ${HTML}
+    ${escape(tweetData.content.text)}
     </div>
     <footer class="tweet-footer">
     <span class="tweet-date">${timeago.format(tweetData.created_at)}</span>
@@ -63,17 +62,21 @@ $(document).ready(function () {
   //Adds new tweet when submit is clicked
   $("#error-message-empty").hide();
   $("#error-message-exceedMax").hide();
+
   $("#new-tweet-text").submit(function (event) {
     event.preventDefault();
+
     const textMax = 140;
-    const textInputLength = $(this).find("#tweet-text").val().length;
+    const textInputLength = $(this).find("#tweet-text").val().trim().length;
 
     if (!textInputLength) {
       $("#error-message-empty").slideDown();
       $("#error-message-exceedMax").hide();
+
     } else if (textInputLength - textMax > 0) {
       $("#error-message-exceedMax").slideDown();
       $("#error-message-empty").hide();
+      
     } else {
       const newTweet = $(this).serialize();
       $.post("/tweets/", newTweet, () => {
