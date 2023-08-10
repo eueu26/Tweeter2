@@ -24,14 +24,18 @@ nav {
  font-family: Bungee;
 }
 
-
 div.new-tweet {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+div.new-tweet.icon {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 
 
@@ -44,7 +48,7 @@ div.new-tweet {
     font-size: 2.5rem;
   }
 
-  .write-new-tweet {
+  /* .write-new-tweet {
     font-size: 1.5rem;
-  }
+  } */
 }
